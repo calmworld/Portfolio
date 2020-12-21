@@ -5,8 +5,7 @@ import Projects from './Projects'
 function Home() {
   return (
     <div className="container">
-      <br />
-      <br />
+      <img className="avatar" src="https://i.ibb.co/2s5Wx6Q/picture.jpg" alt="Avatar"/>
       <h1 className="hello">Sarah Alhuriz</h1>
       <h2>Full Stack Developer</h2>
     </div>
@@ -14,5 +13,4 @@ function Home() {
 }
 
 export default Home
-
 
