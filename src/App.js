@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import ParticleComp from './components/ParticleComp'
 
 import Home from './components/Home'
+import Skills from './components/Skills'
 import Projects from './components/Projects'
 import MyForm from './components/MyForm'
 
@@ -30,6 +31,7 @@ function App() {
           }}
         >
           <Home />
+          <Skills />
           <Projects />
           <MyForm />        
         </div>
