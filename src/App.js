@@ -10,7 +10,7 @@ import MyForm from './components/MyForm'
 function App() {
   return (
     <Router>
-      <div
+      <div className="container"
         style={{
           position: "absolute",
           top: 0,
