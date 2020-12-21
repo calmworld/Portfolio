@@ -1,9 +1,15 @@
 import React from 'react'
+import MyForm from './MyForm'
+import Projects from './Projects'
 
 function Home() {
   return (
-    <div>
-        <h1 className="hello">Hello World</h1>
+    <div className="container">
+      <br />
+      <br />
+      <h1 className="hello">Hello World</h1>
+      <Projects />
+      <MyForm />
     </div>
   )
 }

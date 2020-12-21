@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
 
 body {
   margin: 0;
@@ -20,13 +18,18 @@ code {
   font-family: 'Press Start 2P', cursive;
   font-family: 'Raleway', sans-serif;
   font-size: 50px;
-  background-color: #910707ba;
 }
-.transparent {
-  background-color: transparent;
+
+.container {
+  text-align: center;
 }
+
 .hello {
   text-align: center;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Space Grotesk', sans-serif;
   color: rgb(255, 255, 255)
+}
+
+.list {
+  list-style-type: none;
 }

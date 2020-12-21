@@ -1,15 +1,10 @@
 import React from 'react'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import ParticleComp from './components/ParticleComp'
 
-import Nav from './components/Nav'
 import Home from './components/Home'
 import Projects from './components/Projects'
-import Contact from './components/Contact'
+import MyForm from './components/MyForm'
 
 
 function App() {
@@ -34,11 +29,10 @@ function App() {
             height: "100%"
           }}
         >
-          <Nav />
           <Switch>
             <Route path="/"><Home /></Route>
             <Route path="/projects"><Projects /></Route>
-            <Route path="/contact"><Contact /></Route>
+            <Route exact path="/myform" component={MyForm} />
           </Switch>
         </div>
       </div>

@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import 'materialize-css/dist/css/materialize.min.css'
 
 export default class Nav extends Component {
 
@@ -10,7 +9,7 @@ export default class Nav extends Component {
       <div>
         <nav>
           <div className="nav-wrapper">
-            <ul className="right">
+            <ul className="list">
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -18,7 +17,7 @@ export default class Nav extends Component {
                 <Link to="/projects">Projects</Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/myform">Contact</Link>
               </li>
             </ul>
           </div>
