@@ -4,25 +4,25 @@ export default class Skills extends Component {
     render() {
         return (
             <div>
-                <ul className="list">
-                    <li>React</li>
-                    <li>Javascript</li>
-                    <li>Python</li>
-                    <li>Axios</li>
-                    <li>BCrypt</li>
-                    <li>Node.js</li>
-                    <li>Express</li>
-                    <li>MongoDB</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Bootstrap</li>
-                    <li>Git</li>
-                    <li>Github</li>
-                    <li>REST</li>
-                    <li>CORS</li>
-                    <li>PostgreSQL</li>
-                    <li>Heroku</li>
-                    <li>Postman</li>
+                <ul className="list" className="list-group">
+                    <li className="list-group-item"><i class="fab fa-react"></i></li>
+                    <li className="list-group-item"><i class="fab fa-js-square"></i></li>
+                    <li className="list-group-item"><i class="fab fa-python"></i></li>
+                    <li className="list-group-item">Axios</li>
+                    <li className="list-group-item">BCrypt</li>
+                    <li className="list-group-item"><i class="fab fa-node"></i></li>
+                    <li className="list-group-item">Express</li>
+                    <li className="list-group-item">MongoDB</li>
+                    <li className="list-group-item"><i class="fab fa-html5"></i></li>
+                    <li className="list-group-item"><i class="fab fa-css3-alt"></i></li>
+                    <li className="list-group-item"><i class="fab fa-bootstrap"></i></li>
+                    <li className="list-group-item"><i class="fab fa-git"></i></li>
+                    <li className="list-group-item"><i class="fab fa-github"></i></li>
+                    <li className="list-group-item">REST</li>
+                    <li className="list-group-item">CORS</li>
+                    <li className="list-group-item">PostgreSQL</li>
+                    <li className="list-group-item">Heroku</li>
+                    <li className="list-group-item">Postman</li>
                 </ul>
             </div>
         )

@@ -31,6 +31,10 @@ code {
   margin-top: 7%;
 }
 
-.list {
+.list, .list-group {
   list-style-type: none;
+}
+
+.card-img-top {
+  border-radius: 100px;
 }
