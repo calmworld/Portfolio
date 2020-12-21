@@ -7,9 +7,8 @@ function Home() {
     <div className="container">
       <br />
       <br />
-      <h1 className="hello">Hello World</h1>
-      <Projects />
-      <MyForm />
+      <h1 className="hello">Sarah Alhuriz</h1>
+      <h2>Full Stack Developer</h2>
     </div>
   )
 }

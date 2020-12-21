@@ -27,7 +27,8 @@ code {
 .hello {
   text-align: center;
   font-family: 'Space Grotesk', sans-serif;
-  color: rgb(255, 255, 255)
+  color: rgb(255, 255, 255);
+  margin-top: 20%;
 }
 
 .list {

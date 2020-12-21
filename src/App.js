@@ -29,11 +29,9 @@ function App() {
             height: "100%"
           }}
         >
-          <Switch>
-            <Route path="/"><Home /></Route>
-            <Route path="/projects"><Projects /></Route>
-            <Route exact path="/myform" component={MyForm} />
-          </Switch>
+          <Home />
+          <Projects />
+          <MyForm />        
         </div>
       </div>
     </Router>

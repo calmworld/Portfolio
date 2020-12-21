@@ -33,7 +33,7 @@ export default class MyForm extends React.Component {
     const { status } = this.state;
     return (
       <div>
-        <h1>hello</h1>
+        <h3>Get in Touch</h3>
         <form
           onSubmit={this.submitForm}
           action="https://formspree.io/f/mgeppewq"
@@ -45,11 +45,13 @@ export default class MyForm extends React.Component {
             </div>
             <input type="email" name="email" className="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" />
           </div>
+          <div className="input-group mb-3">
+            <div className="input-group-prepend">
+              <span className="input-group-text" id="basic-addon1">Message</span>
+            </div>
+            <input type="text" name="message" className="form-control" placeholder="I would like to hire you" aria-label="msg" aria-describedby="basic-addon1" />
+          </div>
 
-
-
-          <label>Message:</label>
-          <input type="text" name="message" />
           {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
           {status === "ERROR" && <p>Ooops! There was an error.</p>}
         </form>
