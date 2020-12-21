@@ -1,12 +1,10 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { HashRouter as Router, Route } from "react-router-dom"
 import ParticleComp from './components/ParticleComp'
 
+import './App.css'
 import Home from './components/Home'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
-import MyForm from './components/MyForm'
-import Aboutme from './components/Aboutme'
+
 
 
 function App() {
@@ -31,11 +29,7 @@ function App() {
             height: "100%"
           }}
         >
-          <Home />
-          <Aboutme />
-          <Skills />
-          <Projects />
-          <MyForm />        
+          <Route exact path='/' component={Home} />     
         </div>
       </div>
     </Router>

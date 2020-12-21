@@ -1,34 +1,37 @@
-import React, { Component } from 'react'
+import React from 'react';
 
-export default class Skills extends Component {
-    render() {
+// import SkillPic from './SkillPic';
+
+export default function Skills(props) {
+    let skillLists = Object.keys(props.skills.skills).map(key => {
+        let skillList = props.skills.skills[key].map(skill => {
+            return (<li>{skill}</li>)
+        })
         return (
             <div>
-                <ul className="list" className="list-group">
-                    <li className="list-group-item"><i class="fab fa-react"></i></li>
-                    <li className="list-group-item"><i class="fab fa-js-square"></i></li>
-                    <li className="list-group-item"><i class="fab fa-python"></i></li>
-                    <li className="list-group-item">Axios</li>
-                    <li className="list-group-item">BCrypt</li>
-                    <li className="list-group-item"><i class="fab fa-node"></i></li>
-                    <li className="list-group-item">Express</li>
-                    <li className="list-group-item">MongoDB</li>
-                    <li className="list-group-item"><i class="fab fa-html5"></i></li>
-                    <li className="list-group-item"><i class="fab fa-css3-alt"></i></li>
-                    <li className="list-group-item"><i class="fab fa-bootstrap"></i></li>
-                    <li className="list-group-item"><i class="fab fa-git"></i></li>
-                    <li className="list-group-item"><i class="fab fa-github"></i></li>
-                    <li className="list-group-item">REST</li>
-                    <li className="list-group-item">CORS</li>
-                    <li className="list-group-item">PostgreSQL</li>
-                    <li className="list-group-item">Heroku</li>
-                    <li className="list-group-item">Postman</li>
+                <h4 className="skill-title">{key}</h4>
+                <ul>
+                    {skillList}
                 </ul>
             </div>
         )
-    }
+    });
+    let skillPics = props.skills.pics.map(pic => {
+        return <img src={pic} className="skill-pic" />
+    });
+    
+    return (
+        <div className="section skills">
+            <div>
+                <h1 className="fancy proj-title">Skills</h1>
+                <div className="skill-text">
+                    <div className="skill-list">{skillLists}</div>
+                    <div className="skill-pics">{skillPics}</div>
+                </div>
+            </div>
+        </div>
+    )
 }
-
 
 
 
