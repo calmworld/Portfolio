@@ -12,7 +12,7 @@ function Home(props) {
   let projects = [
     {
       name: "Connect4",
-      description: "The classic connect4 game witha twist, No Gravity! See if you can win!",
+      description: "The classic connect4 game with a twist, No Gravity! See if you can win!",
       tech: "Javascript, CSS, HTML5, JQuery",
       link: "https://unruffled-archimedes-f20493.netlify.app/index.html",
       github: "https://github.com/calmworld/connect4.github.io",
@@ -36,7 +36,7 @@ function Home(props) {
       gif: ""
     },{
       name: "Pancea",
-      description: "Have you been feeling under the weather? Would you like to look up your symptoms online? Pancea is a symptom checker app built using Infermedica API",
+      description: "Have you been feeling under the weather? Would you like to know what your body is telling you? Pancea is a symptom checker app built using highly maintained medical API",
       quote: "“Really Useful App” - Ron Meyers, GA Instructor",
       tech: "Express, React, Mongoose, Bootstrap, Node.js",
       link: "https://pancea.herokuapp.com/",
@@ -57,7 +57,7 @@ function Home(props) {
   let skills = {
     skills: {
       languages: ["JavaScript", "Python"],
-      structures:	["SQL (PostgreSQL)", "NoSQL (MongoDB)", "REST APIs", "GraphQL"],
+      structures:	["PostgreSQL", "MongoDB", "REST APIs", "GraphQL"],
       libraries: ["React", "Express", "Node", "Mongoose", "Flask"]
     },
     pics: ["../img/jslogo.png", "../img/logo-python.png", "../img/axios.png", "../img/logo-react.png", "../img/logo-node.png", "../img/logo-express.png", "../img/logo-flask.png", "../img/logo-psql.png", "../img/logo-mongo.png", "../img/heroku.png"]
