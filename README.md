@@ -1,5 +1,5 @@
 # Link To Deployed Site on Heroku
-https://sarahalhuriz.herokuapp.com/
+https://sarahalhuriz.herokuapp.com/#/
 
 # Getting Started with Create React App
 
