@@ -6,7 +6,7 @@ import Nav from './Nav'
 import Project from './Project'
 import Skills from './Skills'
 import Contact from './Contact'
-
+import MyForm from './MyForm'
 
 function Home(props) {
   let projects = [
@@ -17,7 +17,7 @@ function Home(props) {
       link: "https://unruffled-archimedes-f20493.netlify.app/index.html",
       github: "https://github.com/calmworld/connect4.github.io",
       img: "../img/connect4.png",
-      gif: "../img/connect4.png"
+      gif: ""
     },{
       name: "amazing",
       description: "E-commerce website",
@@ -25,7 +25,7 @@ function Home(props) {
       link: "https://radiant-lowlands-77744.herokuapp.com/products",
       github: "https://github.com/calmworld/amazing.github.io",
       img: "../img/amazing.png",
-      gif: "../img/amazing.png"
+      gif: ""
     },{
       name: "InstaClone",
       description: "Collaboration Project - A social media Instagram clone",
@@ -33,7 +33,7 @@ function Home(props) {
       link: "https://stark-ocean-08311.herokuapp.com/",
       github: "https://github.com/cwhitney85/instaclone-client",
       img: "../img/instaclone.png",
-      gif: "../img/instaclone.png"
+      gif: ""
     },{
       name: "Pancea",
       description: "Have you been feeling under the weather? Would you like to look up your symptoms online? Pancea is a symptom checker app built using Infermedica API",
@@ -41,15 +41,15 @@ function Home(props) {
       tech: "Express, React, Mongoose, Bootstrap, Node.js",
       link: "https://pancea.herokuapp.com/",
       github: "https://github.com/calmworld/pancea-client",
-      img: "../img/pancea.png",
-      gif: "../img/pancea.png"
+      img: "../img/panceasite.png",
+      gif: ""
     }, {
       name: "NerdStop",
       description: "Trivia Game with random categories for a fun trivia night",
       tech: "React, Materialize",
       link: "https://arcane-coast-24480.herokuapp.com/",
       github: "https://github.com/calmworld/nerdstop",
-      imgs: ["../img/nerdstop.png", "../img/nerdstop.png"]
+      img: "../img/nerdstop.png"
     }
   ]
 
@@ -57,7 +57,7 @@ function Home(props) {
   let skills = {
     skills: {
       languages: ["JavaScript", "Python"],
-      structures:	["SQL (PostGreSQL, MySQL)", "NoSQL (MongoDB)", "REST APIs", "GraphQL"],
+      structures:	["SQL (PostgreSQL)", "NoSQL (MongoDB)", "REST APIs", "GraphQL"],
       libraries: ["React", "Express", "Node", "Mongoose", "Flask"]
     },
     pics: ["../img/jslogo.png", "../img/logo-python.png", "../img/axios.png", "../img/logo-react.png", "../img/logo-node.png", "../img/logo-express.png", "../img/logo-flask.png", "../img/logo-psql.png", "../img/logo-mongo.png", "../img/heroku.png"]
@@ -90,6 +90,11 @@ function Home(props) {
         <h1 className="fancy proj-title contact">Contact</h1>
         <Contact />
       </div>
+      <div id="myform">
+        <h1 className="fancy proj-title contact"></h1>
+        <MyForm />
+      </div>
+      <br />
       <footer>
         <p>This portfolio was handcrafted in React by Sarah Alhuriz, © 2020</p>
       </footer>

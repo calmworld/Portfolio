@@ -9,7 +9,7 @@ export default function Header(props) {
                 <div className="header-img" >
                 </div>
             {/* </Slide> */}
-            <Slide direction="left" in="true" timeout={{enter:1000}}>
+            <Slide direction="down" in="true" timeout={{enter:1000}}>
                 <div className="header-text">
                     <h1 className="fancy">Sarah Alhuriz</h1>
                     <h2>Full Stack Web Developer</h2>
