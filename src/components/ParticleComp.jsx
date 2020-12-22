@@ -13,123 +13,87 @@ function ParticleComp() {
             <Particles
                 id="tsparticles"
                 options={{
-                    fpsLimit: 60,
-                    particles: {
-                        number: {
-                            value: 80,
-                            density: {
-                                enable: true,
-                                value_area: 800
-                            }
-                        },
+                    background: {
                         color: {
-                            value: "#ff0000",
+                            value: "#000000",
+                        },
+                    },
+                    fpsLimit: 60,
+                    interactivity: {
+                        detectsOn: "canvas",
+                        events: {
+                            onClick: {
+                                enable: false,
+                                mode: "push",
+                            },
+                            onHover: {
+                                enable: true,
+                                mode: "repulse",
+                            },
+                            resize: true,
+                        },
+                        modes: {
+                            bubble: {
+                                distance: 400,
+                                duration: 2,
+                                opacity: 0.8,
+                                size: 40,
+                            },
+                            push: {
+                                quantity: 4,
+                            },
+                            repulse: {
+                                distance: 200,
+                                duration: 0.4,
+                            },
+                        },
+                    },
+                    particles: {
+                        color: {
+                            value: ["#BD10E0", "#B8E986", "#50E3C2", "#FFD300", "#E86363"],
                             animation: {
                                 enable: true,
                                 speed: 20,
                                 sync: true
                             }
                         },
-                        shape: {
-                            type: "circle",
-                            stroke: {
-                                width: 0,
-                                color: "#000000"
+                        links: {
+                            color: "#571717",
+                            distance: 150,
+                            enable: true,
+                            opacity: 0.5,
+                            width: 1,
+                        },
+                        collisions: {
+                            enable: true,
+                        },
+                        move: {
+                            direction: "none",
+                            enable: true,
+                            outMode: "bounce",
+                            random: false,
+                            speed: 6,
+                            straight: false,
+                        },
+                        number: {
+                            density: {
+                                enable: true,
+                                value_area: 800,
                             },
-                            polygon: {
-                                nb_sides: 5
-                            },
-                            image: {
-                                src: "https://cdn.matteobruni.it/images/particles/github.svg",
-                                width: 100,
-                                height: 100
-                            }
+                            value: 30,
                         },
                         opacity: {
                             value: 0.5,
-                            random: false,
-                            anim: {
-                                enable: false,
-                                speed: 3,
-                                opacity_min: 0.1,
-                                sync: false
-                            }
+                        },
+                        shape: {
+                            type: "circle",
                         },
                         size: {
-                            value: 3,
                             random: true,
-                            anim: {
-                                enable: false,
-                                speed: 20,
-                                size_min: 0.1,
-                                sync: false
-                            }
+                            value: 5,
                         },
-                        line_linked: {
-                            enable: true,
-                            distance: 100,
-                            color: "random",
-                            opacity: 0.4,
-                            width: 1,
-                            triangles: {
-                                enable: true,
-                                color: "#ffffff",
-                                opacity: 0.1
-                            }
-                        },
-                        move: {
-                            enable: true,
-                            speed: 6,
-                            direction: "none",
-                            random: false,
-                            straight: false,
-                            out_mode: "out",
-                            attract: {
-                                enable: false,
-                                rotateX: 600,
-                                rotateY: 1200
-                            }
-                        }
                     },
-                    interactivity: {
-                        detect_on: "canvas",
-                        events: {
-                            onhover: {
-                                enable: true,
-                                mode: "repulse"
-                            },
-                            onclick: {
-                                enable: true,
-                                mode: "push"
-                            },
-                            resize: true
-                        },
-                        modes: {
-                            grab: {
-                                distance: 400,
-                                line_linked: {
-                                    opacity: 1
-                                }
-                            },
-                            bubble: {
-                                distance: 400,
-                                size: 40,
-                                duration: 2,
-                                opacity: 0.8,
-                                speed: 3
-                            },
-                            repulse: {
-                                distance: 200
-                            },
-                            push: {
-                                particles_nb: 4
-                            },
-                            remove: {
-                                particles_nb: 2
-                            }
-                        }
-                    },
-                    retina_detect: true,
+                    detectRetina: true,
                     background: {
                         color: "#000000",
                         image: "",
@@ -137,7 +101,6 @@ function ParticleComp() {
                         repeat: "no-repeat",
                         size: "cover"
                     }
-
                 }}
             />
         </div>
