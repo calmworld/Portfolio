@@ -1,4 +1,4 @@
-# Link To Deployed Site on Heroku
+# Link To Deployed Site
 https://calmworld.github.io/#/
 
 # Getting Started with Create React App
