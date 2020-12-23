@@ -60,7 +60,7 @@ function Home(props) {
       structures:	["PostgreSQL", "MongoDB", "REST APIs", "GraphQL"],
       libraries: ["React", "Express", "Node", "Mongoose", "Flask"]
     },
-    pics: ["../img/jslogo.png", "../img/logo-python.png", "../img/axios.png", "../img/logo-react.png", "../img/logo-node.png", "../img/logo-express.png", "../img/logo-flask.png", "../img/logo-psql.png", "../img/logo-mongo.png", "../img/heroku.png"]
+    pics: ["../img/jslogo.png", "../img/logo-python.png", "../img/axios.png", "./logo512.png", "../img/logo-node.png", "../img/logo-express.png", "../img/logo-flask.png", "../img/logo-psql.png", "../img/logo-mongo.png", "../img/heroku.png"]
   }
 
   return (
