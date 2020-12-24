@@ -175,7 +175,8 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 40%;
-  background-color: red;
+  background-color: #36343488;
+  border-radius: 38px;
 }
 .skill-pic {
   height: 50px;
@@ -188,7 +189,7 @@ main {
   width: 10px;
 }
 footer {
-  background: #250202;
+  background: #25020227;
   color: white;
   text-align: center;
   margin: 0;

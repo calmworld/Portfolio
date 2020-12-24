@@ -36,7 +36,7 @@ function Home(props) {
       gif: ""
     },{
       name: "Pancea",
-      description: "Have you been feeling under the weather? Would you like to know what your body is telling you? Pancea is a symptom checker app built using highly maintained medical API",
+      description: "Have you been feeling under the weather? Would you like to know what your body is telling you? Pancea is a symptom checker app built using physicianx maintained medical API",
       quote: "“Really Useful App” - Ron Meyers, GA Instructor",
       tech: "Express, React, Mongoose, Bootstrap, Node.js",
       link: "https://pancea.herokuapp.com/",
@@ -96,7 +96,7 @@ function Home(props) {
       </div>
       <br />
       <footer>
-        <p>This portfolio was handcrafted in React by Sarah Alhuriz, © 2020</p>
+        <p>Sarah's portfolio was constructed in React by Sarah Alhuriz, © 2020</p>
       </footer>
     </div>
   );

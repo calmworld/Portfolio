@@ -11,7 +11,7 @@ export default function About(props) {
             <div className="about-text">
                 <h1 className="fancy">About</h1>
                 <p>
-                Innovative and adaptable Software Developer with extensive experience contributing to various software projects using in demand professional software. Highly-developed analytical skills and proven ability to identify problems and implement effective solutions while remaining efficient. Driven to communicate well and establish strong rapport in the field of software. Empathetic and intuitive in executive interactions and adept at building high end web applications. Experience with Javascript, Python, React.js, SQL dialects, and Java. 
+                Innovative and adaptable <strong><em>Software Engineer</em></strong> with extensive experience contributing to various software projects using React, Node, Bootstrap, CSS3, SQL, NoSQL, Python and cloud/AWS deployment. Highly-developed analytical skills and proven ability to identify problems and implement effective solutions while remaining efficient. Passionate and intuitive in executive interactions and adept at building high end web applications. Strong communication skills and ability to work closely with a small team, as well as with clients. Proficient in computer science fundamentals, including data structures, algorithms, operating systems, and distributed systems. 
                 </p>
             </div>
         </div>
