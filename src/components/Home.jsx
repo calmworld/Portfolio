@@ -36,7 +36,7 @@ function Home(props) {
       gif: ""
     },{
       name: "Pancea",
-      description: "Have you been feeling under the weather? Would you like to know what your body is telling you? Pancea is a symptom checker app built using physicianx maintained medical API",
+      description: "Have you been feeling under the weather? Would you like to know what your body is telling you? Pancea is a symptom checker app built using physician maintained medical API",
       quote: "“Really Useful App” - Ron Meyers, GA Instructor",
       tech: "Express, React, Mongoose, Bootstrap, Node.js",
       link: "https://pancea.herokuapp.com/",
