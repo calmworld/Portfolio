@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
 .App {
   text-align: center;
 }
@@ -9,10 +11,10 @@ body {
   font-size: 19px;
 }
 .App {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Play', sans-serif;
 }
 .fancy {  
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Play', sans-serif;
   text-transform: capitalize;
 }
 header {
@@ -115,7 +117,8 @@ main {
 }
 .about-text {
   padding-left: 30px;
-  width: 60%;
+  width: 80%;
+  font-size: 22px;
 }
 .proj-title {
   text-align: center;
@@ -174,9 +177,9 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 40%;
-  background-color: #36343488;
-  border-radius: 38px;
+  width: 90%;
+  background-color: #ffffff00;
+  border-radius: 10px;
 }
 .skill-pic {
   height: 50px;

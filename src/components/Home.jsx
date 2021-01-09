@@ -55,12 +55,7 @@ function Home(props) {
 
 
   let skills = {
-    skills: {
-      languages: ["JavaScript", "Python"],
-      structures:	["PostgreSQL", "MongoDB", "REST APIs", "GraphQL"],
-      libraries: ["React", "Express", "Node", "Mongoose", "Flask"]
-    },
-    pics: ["../img/jslogo.png", "../img/logo-python.png", "../img/axios.png", "./logo512.png", "../img/logo-node.png", "../img/logo-express.png", "../img/logo-flask.png", "../img/logo-psql.png", "../img/logo-mongo.png", "../img/heroku.png"]
+    pics: ["../img/jslogo.png", "./logo512.png", "../img/logo-python.png", "../img/node.png", "../img/rest.png", "../img/graphql.png", "../img/aws.png", "../img/github.png", "../img/postgresql.png", "../img/mongo.png", "../img/api.png", "../img/sql.png", "../img/express.png", "../img/git.png", "../img/socket.png", "../img/json.png", "../img/html5.png", "../img/axios.png", "../img/heroku.png", "../img/bootstrap.png", "../img/css3.png", "../img/postman.png", "../img/flask.png", "../img/redux.png", "../img/websocket.png"]
   }
 
   return (
@@ -96,7 +91,7 @@ function Home(props) {
       </div>
       <br />
       <footer>
-        <p>Sarah's portfolio was constructed in React by Sarah Alhuriz, © 2020</p>
+        <p>Built in React by Sarah Alhuriz, © 2020</p>
       </footer>
     </div>
   );
