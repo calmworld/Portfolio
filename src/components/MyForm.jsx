@@ -32,29 +32,26 @@ export default class MyForm extends React.Component {
   render() {
     const { status } = this.state;
     return (
-      <div>
+      <div className="form-group">
         <h3>Get in Touch</h3>
         <form
           onSubmit={this.submitForm}
           action="https://formspree.io/f/mgeppewq"
           method="POST"
         >
-          <div className="input-group mb-3">
-            <div className="input-group-prepend">
-              <span className="input-group-text" id="basic-addon1">Email</span>
-            </div>
-            <input type="email" name="email" className="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" />
-          </div>
-          <div className="input-group mb-3">
-            <div className="input-group-prepend">
-              <span className="input-group-text" id="basic-addon1">Message</span>
-            </div>
-            <input type="text" name="message" className="form-control" placeholder="I would like to hire you" aria-label="msg" aria-describedby="basic-addon1" />
-          </div>
-
-          {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
-          {status === "ERROR" && <p>Ooops! There was an error.</p>}
-        </form>
+        <label>Email</label><br />
+        <input size="70" type="email" name="email" /><br />
+        <label>Message</label><br />
+        <textarea 
+          placeholder="Hello Sarah! I would like to hire you."
+          cols="60" 
+          rows="5" 
+          type="text" 
+          name="message" 
+        /><br />
+        {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+        {status === "ERROR" && <p>Ooops! There was an error.</p>}
+      </form>
       </div>
     );
   }
