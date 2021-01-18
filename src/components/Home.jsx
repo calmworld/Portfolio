@@ -39,7 +39,7 @@ function Home(props) {
       description: "Have you been feeling under the weather? Would you like to know what your body is telling you? Pancea is a symptom checker app built using physician maintained medical API",
       quote: "“Really Useful App” - Ron Meyers, GA Instructor",
       tech: "Express, React, Mongoose, Bootstrap, Node.js",
-      link: "https://pancea.herokuapp.com/",
+      link: "https://main.dfzzr93qmqe2b.amplifyapp.com/",
       github: "https://github.com/calmworld/pancea-client",
       img: "../img/panceasite.png",
       gif: ""
