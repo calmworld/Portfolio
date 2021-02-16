@@ -47,7 +47,7 @@ function Home(props) {
       name: "NerdStop",
       description: "Trivia Game with random categories for a fun trivia night",
       tech: "React, Materialize",
-      link: "https://arcane-coast-24480.herokuapp.com/",
+      link: "https://main.d1yvs5ruv6qdon.amplifyapp.com/",
       github: "https://github.com/calmworld/nerdstop",
       img: "../img/nerdstop.png"
     }
