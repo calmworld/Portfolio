@@ -42,7 +42,15 @@ function Home(props) {
       github: "https://github.com/calmworld/pancea-client",
       img: "../img/panceasite.png",
       gif: ""
-    }, {
+    },{
+      name: "Notes",
+      description: "A full-stack note app where users can create, view and delete notes. As well as image uploading, fetching, and rendering",
+      tech: "JavaScript, React, AWS Amplify, AWS User Auth, Amazon S3 Storage, GraphQL API",
+      link: "https://main.d1e9t6b1l344ne.amplifyapp.com/",
+      github: "https://github.com/calmworld/amplifyapp",
+      img: "../img/notesAWS.png",
+      gif: ""
+    },{
       name: "NerdStop",
       description: "Trivia Game with random categories for a fun trivia night",
       tech: "JavaScript, React, AWS, Materialize, Trivia API",

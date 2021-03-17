@@ -43,7 +43,7 @@ export default class MyForm extends React.Component {
         <input size="70" type="email" name="email" /><br />
         <label>Message</label><br />
         <textarea 
-          placeholder="Hello Sarah! I would like to hire you."
+          placeholder="Hi Sarah! I would like to schedule a meeting with you"
           cols="60" 
           rows="5" 
           type="text" 
