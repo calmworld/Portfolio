@@ -22,7 +22,7 @@ export default function Contact(props) {
                 </li>
                 <li>
                     <InboxIcon /><div className="spacer"></div>
-                    <a href="https://drive.google.com/file/d/1WtO2yMlmRb_UER-E5vXIeK-kYAmVnK1T/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+                    <a href="https://drive.google.com/file/d/1uEtb7BSto8tHwZGVH7P6Oumizs4wX9Di/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
                 </li>
             </ul>
         </nav>
