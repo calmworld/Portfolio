@@ -77,11 +77,13 @@ function Home(props) {
         </div>
         <div id="projects">
             <h1 className="fancy proj-title">Projects</h1>
-            <Project project={projects[3]} />
-            <Project project={projects[4]} />
-            <Project project={projects[2]} />
-            <Project project={projects[1]} />
-            <Project project={projects[0]} />
+            
+            <Project project={projects[3]} /> {/*pancea*/}
+            <Project project={projects[4]} /> {/*Notes App*/}
+         {/*<Project project={projects[2]} />*/} {/*InstaClone*/}
+         {/*<Project project={projects[1]} />*/} {/*Amazing*/}
+            <Project project={projects[5]} /> {/*NerdStop*/}
+            <Project project={projects[0]} /> {/*connect4*/}
         </div>
 
         <div id="skills">
@@ -98,7 +100,7 @@ function Home(props) {
       </div>
       <br />
       <footer>
-        <p>Built in React by Sarah Alhuriz, © 2020</p>
+        <p>Built in React by Sarah Alhuriz, © 2022</p>
       </footer>
     </div>
   );
