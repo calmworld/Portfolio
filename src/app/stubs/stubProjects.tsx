@@ -1,22 +1,5 @@
-import React from 'react'
-import Header from "./Header";
-import Nav from "./Nav";
-import Skills from "./Skills";
-import Contact from "./Contact";
-import { About } from "./About";
-import { Project } from '.';
-
-interface Project {
-  name: string;
-  description: string;
-  tech: string;
-  link: string;
-  github: string;
-  img: string;
-  gif?: string;
-}
-
-const projects = [
+export const stubProjects = 
+[
     {
       name: "Connect4",
       description: "A two player connect4 game with a twist, No Gravity! See if you can win!",
@@ -65,39 +48,4 @@ const projects = [
       github: "https://github.com/calmworld/nerdstop",
       img: "../img/nerdstop.png"
     }
-  ]
-
-export default function Home() {
-	return (
-	  <div className='App'>
-		<header>
-		  <Header />
-		  <Nav />
-		</header>
-		<main>
-		  <div id='about'>
-        <About />
-      </div>
-		  <div id='projects'>
-			<h1 className='fancy proj-title'>Projects</h1>
-			<Project project={projects[3]} />
-			<Project project={projects[4]} />
-			<Project project={projects[5]} />
-			<Project project={projects[0]} />
-		  </div>
-  
-		  <div id='skills'>
-			<Skills />
-		  </div>
-		</main>
-		<div id='contact'>
-		  <h1 className='fancy proj-title contact'>Contact</h1>
-		  <Contact />
-		</div>
-		<br />
-		<footer>
-		  <p>Built in React by Sarah Alhuriz, © 2024</p>
-		</footer>
-	  </div>
-	);
-};
+]

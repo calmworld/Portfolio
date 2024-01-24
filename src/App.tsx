@@ -1,7 +1,7 @@
 import { MemoryRouter, Route, Routes } from "react-router-dom";
-import ParticleComp from "./components/ParticleComp";
-import Home from "./components/Home";
+import ParticleComp from "./app/components/ParticleComp";
 import "./App.css";
+import { Home } from "./app/components";
 
 export default function App() {
 	return (

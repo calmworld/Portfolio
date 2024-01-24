@@ -56,10 +56,13 @@
     "@types/node": "^20.11.5",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
+    "compression-webpack-plugin": "^11.0.0",
     "css-loader": "^6.9.0",
     "gh-pages": "^3.2.3",
+    "ignore-loader": "^0.1.2",
     "source-map-loader": "^5.0.0",
     "style-loader": "^3.3.4",
+    "terser-webpack-plugin": "^5.3.10",
     "ts-loader": "^9.5.1",
     "typescript": "^5.3.3"
   }

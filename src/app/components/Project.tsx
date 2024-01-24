@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface ProjectProps {
+interface ProjectDetailsProps {
 	project: {
 	  img?: string;
 	  gif?: string;
@@ -14,7 +14,17 @@ interface ProjectProps {
 	};
 }
 
-export const Project: React.FC<ProjectProps> = ({ project }) => {
+interface ProjectDisplayProps {
+	name: string;
+	description: string;
+	tech: string;
+	link: string;
+	github: string;
+	img: string;
+	gif?: string;
+  }
+
+export const Project: React.FC<ProjectDetailsProps> = ({ project }) => {
 	let projStyle: React.CSSProperties = {
 		backgroundImage: `url(${project.img})`,
 	  };
