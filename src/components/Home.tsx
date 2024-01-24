@@ -1,15 +1,22 @@
 import React from 'react'
+import Header from "./Header";
+import Nav from "./Nav";
+import Skills from "./Skills";
+import Contact from "./Contact";
+import { About } from "./About";
+import { Project } from '.';
 
-import About from './About'
-import Header from './Header'
-import Nav from './Nav'
-import Project from './Project'
-import Skills from './Skills'
-import Contact from './Contact'
-import MyForm from './MyForm'
+interface Project {
+  name: string;
+  description: string;
+  tech: string;
+  link: string;
+  github: string;
+  img: string;
+  gif?: string;
+}
 
-function Home(props) {
-  let projects = [
+const projects = [
     {
       name: "Connect4",
       description: "A two player connect4 game with a twist, No Gravity! See if you can win!",
@@ -60,51 +67,37 @@ function Home(props) {
     }
   ]
 
-
-  let skills = {
-    pics: ["../img/jslogo.png", "./logo512.png", "../img/logo-python.png", "../img/node.png", "../img/rest.png", "../img/graphql.png", "../img/aws.png", "../img/github.png", "../img/postgresql.png", "../img/mongo.png", "../img/api.png", "../img/sql.png", "../img/express.png", "../img/git.png", "../img/socket.png", "../img/json.png", "../img/html5.png", "../img/axios.png", "../img/heroku.png", "../img/bootstrap.png", "../img/css3.png", "../img/postman.png", "../img/flask.png", "../img/redux.png", "../img/websocket.png"]
-  }
-
-  return (
-    <div className="App">
-      <header>
-        <Header className="header" />
-        <Nav />
-      </header>
-      <main>
-        <div id="about">
-            <About />
-        </div>
-        <div id="projects">
-            <h1 className="fancy proj-title">Projects</h1>
-            
-            <Project project={projects[3]} /> {/*pancea*/}
-            <Project project={projects[4]} /> {/*Notes App*/}
-         {/*<Project project={projects[2]} />*/} {/*InstaClone*/}
-         {/*<Project project={projects[1]} />*/} {/*Amazing*/}
-            <Project project={projects[5]} /> {/*NerdStop*/}
-            <Project project={projects[0]} /> {/*connect4*/}
-        </div>
-
-        <div id="skills">
-            <Skills skills={skills} />
-        </div>
-      </main>
-      <div id="contact">
-        <h1 className="fancy proj-title contact">Contact</h1>
-        <Contact />
+export default function Home() {
+	return (
+	  <div className='App'>
+		<header>
+		  <Header />
+		  <Nav />
+		</header>
+		<main>
+		  <div id='about'>
+        <About />
       </div>
-      <div id="myform">
-        <h1 className="fancy proj-title contact"></h1>
-        <MyForm />
-      </div>
-      <br />
-      <footer>
-        <p>Built in React by Sarah Alhuriz, © 2022</p>
-      </footer>
-    </div>
-  );
-}
-
-export default Home;
-
+		  <div id='projects'>
+			<h1 className='fancy proj-title'>Projects</h1>
+			<Project project={projects[3]} />
+			<Project project={projects[4]} />
+			<Project project={projects[5]} />
+			<Project project={projects[0]} />
+		  </div>
+  
+		  <div id='skills'>
+			<Skills />
+		  </div>
+		</main>
+		<div id='contact'>
+		  <h1 className='fancy proj-title contact'>Contact</h1>
+		  <Contact />
+		</div>
+		<br />
+		<footer>
+		  <p>Built in React by Sarah Alhuriz, © 2024</p>
+		</footer>
+	  </div>
+	);
+};
