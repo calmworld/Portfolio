@@ -7,7 +7,7 @@ export default function App() {
 	return (
 		<MemoryRouter>
 			<div
-				className='container'
+				className="container"
 				style={{
 					position: "absolute",
 					top: 0,
@@ -27,10 +27,7 @@ export default function App() {
 					}}
 				>
 					<Routes>
-					<Route
-						path='/'
-						element={<Home />}
-					/>
+						<Route path="/" element={<Home />} />
 					</Routes>
 				</div>
 			</div>

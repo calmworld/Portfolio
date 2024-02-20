@@ -1,33 +1,16 @@
-import React from 'react'
-
-let skillList = [
-	"Javascript",
-	"Typescript",
-	"React",
-	"Node.js",
-	"Python",
-	"HTML5",
-	"CSS",
-	"Git",
-	"Github",
-	"PostgreSQL",
-	"MongoDB",
-	"CORS",
-	"REST",
-	"Postman",
-	"AWS",
-	"Express",
-	"Axios",
-	"Bootstrap",
-	"Heroku",
-];
+import React from "react";
+import { skillList } from "../stubs/stubSkills";
 
 export default function Skills() {
 	return (
 		<div>
-			<h4 className='skill-title'>Skills</h4>
-			<ul className='list'>
-				<li>{skillList}</li>
+			<h4 className="skill-title">Skills</h4>
+			<ul className="skill-list">
+				{skillList.map((skill) => (
+					<li key={skill} className="skill-item">
+						{skill}
+					</li>
+				))}
 			</ul>
 		</div>
 	);
