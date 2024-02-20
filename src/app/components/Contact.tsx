@@ -42,7 +42,7 @@ export default function Contact() {
 					<InboxIcon />
 					<div className="spacer" />
 					<a
-						href="https://drive.google.com/file/d/1tZQiNuToytZO8yN1aDKmCKdyZEDHhg4B/view?usp=sharing"
+						href="https://drive.google.com/file/d/1x1kVGT6Azl56ZYGsNGhdEmbXUWQDS2nX/view?usp=sharing"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
